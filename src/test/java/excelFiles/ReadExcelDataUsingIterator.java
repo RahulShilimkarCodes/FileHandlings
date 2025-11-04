@@ -3,14 +3,17 @@ package excelFiles;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Iterator;
 
+import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class ReadExcelData {
+public class ReadExcelDataUsingIterator {
 	
 	public static void readExcelData(String filePath) throws IOException
 	{
@@ -23,17 +26,17 @@ public class ReadExcelData {
 		//XSSFSheet sheet = workbook.getSheetAt(0);		- this will get the sheet at index 0...
 		
 		
-		//getting total rows and columns..
-		int totalRows = sheet.getLastRowNum();
-		int totalCells = sheet.getRow(0).getLastCellNum();
+		Iterator<Row> rowIter = sheet.iterator();		//return all the rows		
 		
-		for(int row = 0 ; row < totalRows ; row++)
+		while(rowIter.hasNext())
 		{
-			XSSFRow currentRow = sheet.getRow(row);			//getting the rows..0,1,...
+			XSSFRow currentRow = (XSSFRow) rowIter.next();
 			
-			for(int cells = 0 ; cells < totalCells ; cells++)
+			Iterator<Cell> cellIter = currentRow.cellIterator();		//iterate all the cells in the row.
+			
+			while(cellIter.hasNext())
 			{
-				XSSFCell currentCell = currentRow.getCell(cells);
+				XSSFCell currentCell = (XSSFCell) cellIter.next();
 				
 				CellType cellType = currentCell.getCellType();
 				
@@ -56,11 +59,6 @@ public class ReadExcelData {
 			
 			System.out.println();
 		}
-		
-		workbook.close();
-        fis.close();
-		
-		
 	}
 
 	public static void main(String[] args) throws IOException {
