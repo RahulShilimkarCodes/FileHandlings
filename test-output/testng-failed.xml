@@ -5,8 +5,8 @@
     <classes>
       <class name="jsonDataDriven.JsonLoginTest">
         <methods>
+          <include name="loginTestIterator"/>
           <include name="tearDown"/>
-          <include name="loginTest"/>
           <include name="browserSetup"/>
         </methods>
       </class> <!-- jsonDataDriven.JsonLoginTest -->

@@ -1,81 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-05T22:01:40 IST" name="Default suite" finished-at="2025-11-05T22:01:54 IST" duration-ms="13787">
+  <suite started-at="2025-11-05T22:48:44 IST" name="Default suite" finished-at="2025-11-05T22:48:58 IST" duration-ms="13846">
     <groups>
     </groups>
-    <test started-at="2025-11-05T22:01:40 IST" name="Default test" finished-at="2025-11-05T22:01:54 IST" duration-ms="13787">
+    <test started-at="2025-11-05T22:48:44 IST" name="Default test" finished-at="2025-11-05T22:48:58 IST" duration-ms="13846">
       <class name="jsonDataDriven.JsonLoginTest">
-        <test-method is-config="true" signature="browserSetup()[pri:0, instance:jsonDataDriven.JsonLoginTest@5e0826e7]" started-at="2025-11-05T22:01:40 IST" name="browserSetup" finished-at="2025-11-05T22:01:43 IST" duration-ms="3240" status="PASS">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:jsonDataDriven.JsonLoginTest@8dbdac1]" started-at="2025-11-05T22:48:44 IST" name="browserSetup" finished-at="2025-11-05T22:48:47 IST" duration-ms="2959" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:jsonDataDriven.JsonLoginTest@5e0826e7]" started-at="2025-11-05T22:01:43 IST" name="loginTest" data-provider="jsonDataProvider" finished-at="2025-11-05T22:01:46 IST" duration-ms="2918" status="PASS">
+        <test-method signature="loginTestIterator(jsonDataDriven.UserPojo)[pri:0, instance:jsonDataDriven.JsonLoginTest@8dbdac1]" started-at="2025-11-05T22:48:47 IST" name="loginTestIterator" data-provider="jsonIterDataProvider" finished-at="2025-11-05T22:48:50 IST" duration-ms="2936" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[rahulshettyacademy]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[learning]]>
+                <![CDATA[jsonDataDriven.UserPojo@41f35f7c]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:jsonDataDriven.JsonLoginTest@5e0826e7]" started-at="2025-11-05T22:01:46 IST" name="tearDown" finished-at="2025-11-05T22:01:46 IST" duration-ms="203" status="PASS">
+        </test-method> <!-- loginTestIterator -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:jsonDataDriven.JsonLoginTest@8dbdac1]" started-at="2025-11-05T22:48:50 IST" name="tearDown" finished-at="2025-11-05T22:48:50 IST" duration-ms="244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="browserSetup()[pri:0, instance:jsonDataDriven.JsonLoginTest@5e0826e7]" started-at="2025-11-05T22:01:46 IST" name="browserSetup" finished-at="2025-11-05T22:01:47 IST" duration-ms="712" status="PASS">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:jsonDataDriven.JsonLoginTest@8dbdac1]" started-at="2025-11-05T22:48:50 IST" name="browserSetup" finished-at="2025-11-05T22:48:51 IST" duration-ms="768" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:jsonDataDriven.JsonLoginTest@5e0826e7]" started-at="2025-11-05T22:01:47 IST" name="loginTest" data-provider="jsonDataProvider" finished-at="2025-11-05T22:01:50 IST" duration-ms="2676" status="PASS">
+        <test-method signature="loginTestIterator(jsonDataDriven.UserPojo)[pri:0, instance:jsonDataDriven.JsonLoginTest@8dbdac1]" started-at="2025-11-05T22:48:51 IST" name="loginTestIterator" data-provider="jsonIterDataProvider" finished-at="2025-11-05T22:48:54 IST" duration-ms="2924" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[rahul]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[rahul]]>
+                <![CDATA[jsonDataDriven.UserPojo@66c83fc8]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:jsonDataDriven.JsonLoginTest@5e0826e7]" started-at="2025-11-05T22:01:50 IST" name="tearDown" finished-at="2025-11-05T22:01:50 IST" duration-ms="188" status="PASS">
+        </test-method> <!-- loginTestIterator -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:jsonDataDriven.JsonLoginTest@8dbdac1]" started-at="2025-11-05T22:48:54 IST" name="tearDown" finished-at="2025-11-05T22:48:54 IST" duration-ms="184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="browserSetup()[pri:0, instance:jsonDataDriven.JsonLoginTest@5e0826e7]" started-at="2025-11-05T22:01:50 IST" name="browserSetup" finished-at="2025-11-05T22:01:51 IST" duration-ms="739" status="PASS">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:jsonDataDriven.JsonLoginTest@8dbdac1]" started-at="2025-11-05T22:48:54 IST" name="browserSetup" finished-at="2025-11-05T22:48:55 IST" duration-ms="724" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:jsonDataDriven.JsonLoginTest@5e0826e7]" started-at="2025-11-05T22:01:51 IST" name="loginTest" data-provider="jsonDataProvider" finished-at="2025-11-05T22:01:53 IST" duration-ms="2650" status="PASS">
+        <test-method signature="loginTestIterator(jsonDataDriven.UserPojo)[pri:0, instance:jsonDataDriven.JsonLoginTest@8dbdac1]" started-at="2025-11-05T22:48:55 IST" name="loginTestIterator" data-provider="jsonIterDataProvider" finished-at="2025-11-05T22:48:58 IST" duration-ms="2573" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[kahul]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[kahul]]>
+                <![CDATA[jsonDataDriven.UserPojo@1686f0b4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:jsonDataDriven.JsonLoginTest@5e0826e7]" started-at="2025-11-05T22:01:53 IST" name="tearDown" finished-at="2025-11-05T22:01:53 IST" duration-ms="203" status="PASS">
+        </test-method> <!-- loginTestIterator -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:jsonDataDriven.JsonLoginTest@8dbdac1]" started-at="2025-11-05T22:48:58 IST" name="tearDown" finished-at="2025-11-05T22:48:58 IST" duration-ms="199" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
