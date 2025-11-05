@@ -39,9 +39,9 @@ public class ExcelUtils {
 				switch(celltype) {
 				case STRING : userData[row-1][column] = currentColumn.getStringCellValue();
 								break;
-				case NUMERIC : userData[row-1][column] = currentColumn.getNumericCellValue()
+				case NUMERIC : userData[row-1][column] = currentColumn.getNumericCellValue();
 								break;
-				case BOOLEAN : userData[row-1][column] = currentColumn.getBooleanCellValue()
+				case BOOLEAN : userData[row-1][column] = currentColumn.getBooleanCellValue();
 								break;
 				default: break;
 				}

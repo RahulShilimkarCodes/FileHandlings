@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="dataDriverExcel.LoginCases">
+      <class name="jsonDataDriven.JsonLoginTest">
         <methods>
-          <include name="loginTest" invocation-numbers="1 2"/>
-          <include name="browserSetup"/>
           <include name="tearDown"/>
+          <include name="loginTest"/>
+          <include name="browserSetup"/>
         </methods>
-      </class> <!-- dataDriverExcel.LoginCases -->
+      </class> <!-- jsonDataDriven.JsonLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
