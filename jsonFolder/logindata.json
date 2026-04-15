@@ -1,0 +1,16 @@
+{
+	"users":[
+	{
+		"username":"rahulshettyacademy",
+		"password":"learning"
+	},
+	{
+		"username":"rahul",
+		"password":"rahul"
+	},
+	{
+		"username":"kahul",
+		"password":"kahul"
+	}
+	]
+}
