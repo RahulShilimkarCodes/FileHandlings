@@ -10,7 +10,7 @@ public class ExcelDataProvider {
 	@DataProvider(name="excelDataProvider")
 	public Object[][] excelDataProvider() throws IOException
 	{
-		String filePath = System.getProperty("user.dir")+File.separator + "excelFolder"+File.separator+"LoginData.xlsx";
+		String filePath = System.getProperty("user.dir")+ File.separator + "excelFolder"+File.separator+"LoginData.xlsx";
 		String sheetName = "LoginData";
 		
 		return ExcelUtils.readExcel(filePath, sheetName);
