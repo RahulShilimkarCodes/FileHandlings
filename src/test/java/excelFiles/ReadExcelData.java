@@ -15,11 +15,15 @@ public class ReadExcelData {
 	public static void readExcelData(String filePath) throws IOException
 	{
 		
+		//If working with .xlsx file - we use XSSFWorkbook,etc. classes...
+		//If working with .xls files - we use HSSFWorkbook,etc. classes..		(Older format of excel file..)
+		//Workbook -> Sheet -> Row -> Cell..
+		
 		FileInputStream fis =  new FileInputStream(filePath);
 		
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
 		
-		XSSFSheet sheet = workbook.getSheet("Population Data");			//sheet using index..
+		XSSFSheet sheet = workbook.getSheet("Population Data");			//sheet using name..
 		//XSSFSheet sheet = workbook.getSheetAt(0);		- this will get the sheet at index 0...
 		
 		
