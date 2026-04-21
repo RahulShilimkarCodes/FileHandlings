@@ -52,6 +52,7 @@ public class CSVFile {
 		FileReader fileReader = new FileReader(filePath);
 		
 		BufferedReader reader = new BufferedReader(fileReader);
+		//BR is used while reading data line by line..
 		
 		String line;
 		

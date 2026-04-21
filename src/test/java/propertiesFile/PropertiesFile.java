@@ -24,8 +24,9 @@ public class PropertiesFile {
 		//FileOutputStream - write data in the file..
 		
 		prop.store(fos, "adding the initial data about doraemon");
+		//filePath and comments entered....
 		
-		fos.close();
+		fos.close();		//close the file...
 		
 		System.out.println("Properties value's have been added in the file "+propertyFilePath);
 	
@@ -63,6 +64,7 @@ public class PropertiesFile {
 		prop.load(fis);
 
 		Set<String> keysPresent = prop.stringPropertyNames();		//gives back all the keys in the file
+		//stringPropertyNames - returns all property name in string format..
 		
 		for(String key : keysPresent)
 		{

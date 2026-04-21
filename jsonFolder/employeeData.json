@@ -1,0 +1,16 @@
+{
+  "firstName": "John",
+  "lastName": "Kennedy",
+  "address": [
+    {
+      "street": "123 Main Street",
+      "city": "Springfield",
+      "state": "IL"
+    },
+    {
+      "street": "456 Oak Avenue",
+      "city": "Chicago",
+      "state": "IL"
+    }
+  ]
+}
